@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ProyectoWebApp',
-    'serviciosApp',
+    'servicios',
 ]
 
 MIDDLEWARE = [
@@ -121,5 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+#Nombre de la URL
 MEDIA_URL = '/media/'
+#Indica en la carpeta en la cual va a buscar los archivos. 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
