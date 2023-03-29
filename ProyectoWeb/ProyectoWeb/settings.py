@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'ProyectoWebApp',
     'servicios',
     'blog',
+    'contacto',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +127,12 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 #Indica en la carpeta en la cual va a buscar los archivos. 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#Configuración Email.
+
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_USE_TLS=True
+EMAIL_PORT=587
+EMAIL_HOST_USER="sergio.rios@est.iudigital.edu.co"
+EMAIL_HOST_PASSWORD='contraseña*.'

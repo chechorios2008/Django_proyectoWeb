@@ -24,8 +24,12 @@ urlpatterns = [
 
     path('blog/', include('blog.urls')),
 
+    path('contacto/', include('contacto.urls')),
+
     #No se relaciona cada URL, sino cada urls.py de las <> app's
     path('', include('ProyectoWebApp.urls')),
+
+    
 
     
 ]
