@@ -26,16 +26,13 @@ urlpatterns = [
 
     path('contacto/', include('contacto.urls')),
 
+    path('autenticacion/', include('autenticacion.urls')),
+
     path('tienda/', include('tienda.urls')),
 
     path('carro/', include('carro.urls')),
 
     #No se relaciona cada URL, sino cada urls.py de las <> app's
     path('', include('ProyectoWebApp.urls')),
-
-    path('autenticacion/', include('autenticacion.urls')),
-
-    
-
     
 ]
